@@ -1,5 +1,7 @@
 console.log("i work");
 
+console.log(null === undefined);
+
 //==========================
 // OBJECTS AND FUNCTIONS 
 //==========================
