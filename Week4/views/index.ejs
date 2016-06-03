@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Candy Shop</title>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+	<h1>Candy Shop</h1>
+	<p> Welcome to my awesome candy shop!</p>
+
+	<a href="/new">Add a New Candy</a>
+
+	<div id="container">
+		<% for (var i = 0; i < candy.length; i++){ %>
+		<div id="individual-candy">
+			<a href="/<%= candy[i].id %>"><img class="candy-img" src="<%= candy[i].image %>"></a>
+			<h2><%= candy[i].name %></h2>
+			<p><%= candy[i].description %></p>
+			<p>In Stock: 
+				<% if (candy[i].quantity === 0){ %>
+					SOLD OUT
+				<% } else { %>
+				 	<%= candy[i].quantity %>
+			 	<% } %>
+		</div>
+		<% } %>
+	</div>
+</body>
+</html>

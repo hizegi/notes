@@ -1,0 +1,51 @@
+body{
+	background: snow;
+	font-size: 20px;
+}
+
+#new-candy{
+	width: 50%;
+	background: pink;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+form {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+input,
+textarea{
+	width: 80%;
+	height: 50px;
+}
+
+
+button{
+margin: 0 auto;
+display: block;
+}
+
+#container{
+	width: 90%;
+	background: #FFB0B0;
+	padding: 2em;
+}
+
+#individual-candy{
+	width: 28%;
+	text-align: center;
+	/*margin: 0 auto;*/
+	border: 1px solid black;
+	height: 300px;
+	display: inline-block;
+	margin: 2%;
+	vertical-align: top;
+	background: white;
+}
+
+.candy-img{
+	width: 200px;
+}
