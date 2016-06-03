@@ -60,11 +60,7 @@ router.get('/:id/edit', function(req, res){
 // ================================
 // UPDATE
 // ================================
-router.put("/:id", function(req, res){
-	Candy.findByIdAndUpdate(req.params.id, req.body, function(err, candy){
-				res.redirect('/' + req.params.id);
-			});
-});
+
 
 
 
@@ -77,3 +73,55 @@ router.put("/:id", function(req, res){
 // EXPORTS
 // ================================
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//// update candy info
+// router.put("/:id", function(req, res){
+// 	Candy.findByIdAndUpdate(req.params.id, req.body, function(err, candy){
+// 				res.redirect('/' + req.params.id);
+// 			});
+// });
+
+//// delete candy
+// router.delete("/:id", function(req, res){
+// 	Candy.findByIdAndRemove(req.params.id, function(err, donut){
+// 		res.redirect('/');
+// 	})
+// });
+
