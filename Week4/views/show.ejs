@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Candy Shop</title>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+
+
+
+
+
+<div id="new-candy">
+	<h1><%= candy.name %></h1>
+	<img class="show-me-candy" src="<%= candy.image %>"><br>
+	<p><%= candy.description %> </p>
+	<p>In Stock: 
+		<% if (candy.quantity === 0){ %>
+			SOLD OUT
+		<% } else { %>
+		 	<%= candy.quantity %>
+	 	<% } %>
+	</p>
+
+		<p>[[EDIT BUTTON GOES HERE]]</p>
+
+		<form action='/<%= candy.id %>?_method=DELETE' method="POST">
+			<button>Delete Item</button>
+		</form>
+
+</div>
+
+<a href="/">Return Home</a><br><br>
+
+</body>
+</html>

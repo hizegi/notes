@@ -6,24 +6,38 @@ var express = require("express"),
 	Candy = require("../models/candy.js");
 
 // ================================
-// GET REQUESTS
+// INDEX
 // ================================
 
 // INDEX PAGE
 router.get('/', function(req, res){
+	console.log(req);
 	Candy.find({}, function(err, candy){
 		res.render("index.ejs", {candy: candy});	
 	})
 	
 });
 
+// ================================
+// NEW
+// ================================
 // NEW CANDY
 router.get('/new', function(req, res){
 	res.render("new.ejs");
 });
 
+
 // ================================
-// NEW
+// SHOW
+// ================================
+router.get('/:id', function(req, res){
+	Candy.findById(req.params.id, function(err, candy){
+		res.render("show.ejs", {candy: candy})
+	});
+});
+
+// ================================
+// CREATE
 // ================================
 router.post('/', function(req, res){
 	// console.log("NEW CANDY ROUTE YAY");
@@ -32,6 +46,32 @@ router.post('/', function(req, res){
 		res.redirect('/');
 	})
 });
+
+
+// ================================
+// EDIT
+// ================================
+router.get('/:id/edit', function(req, res){
+	Candy.findById(req.params.id, function(err, candy){
+		res.render("edit.ejs", {candy: candy});
+	})
+});
+
+// ================================
+// UPDATE
+// ================================
+router.put("/:id", function(req, res){
+	Candy.findByIdAndUpdate(req.params.id, req.body, function(err, candy){
+				res.redirect('/' + req.params.id);
+			});
+});
+
+
+
+// ================================
+// DELETE
+// ================================
+
 
 // ================================
 // EXPORTS
