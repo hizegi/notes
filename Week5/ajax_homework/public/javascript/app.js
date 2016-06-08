@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 getUsers();
 
+
 var $homeButton = $('#home-button');
 // console.log($homeButton);
 
@@ -18,6 +19,9 @@ $homeButton.click(function(){
 
 var renderUsers = function(data){
 
+console.log("WE GOT THE USERS?", data);
+
+
 	var $usersContainer = $('#users-container');
 	var $usersList = $('#users-list');
 
@@ -31,6 +35,11 @@ var renderUsers = function(data){
 
 	// Parse through [data] to display the data on the page
 	for (var i = 0; i < data.length; i++){
+
+		console.log(data);
+		console.log(data[i]);
+		console.log("This is the data's id number: ", data[i]._id);
+
 		var $currentUser = $("<li class='user-item' data-attribute=" + data[i]._id + ">" + data[i].username + "</li>");
 		$currentUser.click(function(){
 			var target = $(event.target);//This code sets a variable equal to the target element
@@ -55,6 +64,7 @@ var renderUsers = function(data){
 
 	        //invoke deleteUser with ID
 			deleteUser(sendID);
+
 		})
 	};
 
@@ -140,7 +150,10 @@ var renderCreateUser = function() {
 	// click on "NEW" and fire createUser AJAX call
 	$("#create-it-button").click(function() {
 
+			// serialize(); is method for forms
 			var $newFormData = $("#new-form").serialize();
+
+			console.log("This is what serialize does: ", $newFormData);
 
 			//invoke createUser with formData
 			createUser($newFormData);
@@ -151,6 +164,7 @@ var renderCreateUser = function() {
 
 }
 
+
 // ======================================================================
 // ======================================================================
 // 								AJAX CALLS
@@ -159,15 +173,17 @@ var renderCreateUser = function() {
 
 // grab all the users in the DB
 var getUsers = function (){
+
 	$.ajax({
-		url: '/users',
+		url: '/users/',
 		method: 'GET',
-		success: function(data){
-			console.log("AJAX GET REQUEST successful: ", data);
-			renderUsers(data);
+		success: function(response){
+			console.log("AJAX GET REQUEST successful: ", response);
+			renderUsers(response);
 		}
 	});
 };
+
 
 // Grab USER by ID
 var showUser = function(user_id) {
@@ -181,9 +197,11 @@ var showUser = function(user_id) {
 	});
 };
 
+
 var createUser = function(newUser) {
 	console.log("createUser button fired! Making AJAX call...");
 	console.log("...with this data: ", newUser);
+	//newUser === (username=Christine)
 
 	// AJAX call to router.post('/');
 	$.ajax({
@@ -203,28 +221,33 @@ var createUser = function(newUser) {
 
 var deleteUser = function(user_id) {
 
+	console.log("This is the user id: ", user_id);
+
 	$.ajax({
 	url: '/users/' + user_id,
 	method: 'delete',
 	success: function(data, status, jqXHR){
 		console.log("AJAX call for DELETE a success: ", data);
+		console.log("This is the status: ", status);
 		},
 	failure: function(jqXHR, status, error)	{
 		console.log("deleteuser ajax failed");
 		console.log(error);
 	},
+	//default action (will always do this no matter what);
 	complete: function() {
 		// reload the page
 		// since I can't redirect on server side
 		location.reload();
 	}
 	});
+
 };
 
 var createPost = function(postData, userData){
 
 	console.log("This is the Post we're accessing: ", postData);
-	console.log("This is the user we're accessing: ", user);
+	console.log("This is the user we're accessing: ", userData);
 
 	$.ajax({
 	url: '/users/' + userData._id + "/posts",
@@ -234,7 +257,7 @@ var createPost = function(postData, userData){
 		console.log("AJAX call for POST post a success: ", data);
 		},
 	failure: function(jqXHR, status, error)	{
-		console.log("deleteuser ajax failed");
+		console.log("post ajax failed");
 		console.log(error);
 	},
 	complete: function() {

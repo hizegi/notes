@@ -7,6 +7,7 @@ var router = express.Router();
 //GET ALL USERS
 router.get('/', function(req, res){
 	User.find({}, function(err, user){
+		console.log("WE GOT THIS INFO!");
 		res.send(user);
 	});
 });
@@ -20,6 +21,8 @@ router.get('/posts', function(req, res){
 
 //GET USER BY ID
 router.get('/:id', function(req, res) {
+
+
 	User.findById(req.params.id).then(function(user) {
 		res.json(user);
 	});
@@ -48,14 +51,19 @@ router.post('/', function(req, res) {
 //DELETE A USER
 router.delete('/:id', function(req, res) {
 
+	console.log("HEY DELETE ROUTE!", req.params.id);
+
 	// find User by ID (req.params.id) and DELETE
 	User.findOneAndRemove({ _id: req.params.id}, function(err, user) {
 		if(err) {
 			console.log(err);
 			res.json(false);
+
 		} else {
 			console.log("User has been deleted: ", user);
 			res.json(true)
+			// res.redirect('/');
+
 		}
 	});
 });
@@ -67,23 +75,32 @@ router.post('/:id/posts', function(req, res) {
 	console.log(req.body);
 
 	var post = new Post();
+
 	post.entry = req.body.entry;
+
 	post.save(function(err) {
 		if (err) {
 			console.log(err);
 		} else {
-			console.log("post saved");
+			console.log("*********post saved**********");
 
 			User.findById(req.params.id).then(function(user) {
+
+
 				console.log(user.posts);
 				console.log(post);
+
+
 			user.posts.push(post);
+
+
 			user.save(function(err) {
 			if (err) {
 				console.log("there's an error");
 				console.log(err);
 			} else {
 				console.log('it saved');
+				res.json(true);
 			}
 		}) 
 	})
