@@ -117,3 +117,21 @@ Method | Description
 </html>
 ```
 
+##### .then()
+Yet another shorthand version is to use `.then()` that takes two function callbacks as parameters
+    - 1st parameter: success
+    - 2nd paramter: failure
+```
+            $.ajax({
+                url:'http://www.omdasdfbapi.com/',
+                method: "GET",
+                data: { s: "star wars" }
+            })
+            .then(function(data){ //success function here
+                console.log("Success!", data);
+            }, function(data){ //error function here
+                console.log('fail!', data);
+            });
+```
+
+
