@@ -43,7 +43,7 @@ You will notice on [jQuery's Official Site](http://jquery.com/download/) there a
 There are 2 ways to install jQuery:
 
 1. Reference jQuery from a CDN and include it into our HTML 
- ```sh
+ ```
 <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 ```
 2. Install locally
