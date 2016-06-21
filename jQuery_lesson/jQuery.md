@@ -149,7 +149,7 @@ $("#square2").css("color", red");
 ```
 Or if we want to change all squares (with class "square") to color blue:
 ```
-$(.square).css("color", blue);
+$(".square").css("color", blue);
 ```
 
 Check out [more things](http://api.jquery.com/css/) you can do with `.css()`
