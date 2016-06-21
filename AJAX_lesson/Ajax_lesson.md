@@ -45,7 +45,7 @@ Method | Description
 
 
 ##### Example:
-```
+```javascript
 <!DOCTYPE html>
 <html>
     <head>
@@ -87,7 +87,7 @@ Method | Description
 - No changed functionality, still dealing with the same data
 - `$.ajax()` returns a `promise` objects, which we use: `.done()`, `.fail()`, or `.always()` on, passing in a callback function:
 
-```
+```javascript
 <!DOCTYPE html>
 <html>
     <head>
