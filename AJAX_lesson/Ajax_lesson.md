@@ -33,6 +33,7 @@ Once a page has loaded, normally you would refresh the whole page to view a chan
 
 ##### jQuery and AJAX: Requests
 There are several jQuery methods that handle Ajax requests, which are usually triggered by an event (clicking on a link, submitting a form, etc):
+
 Method | Description 
 --- | --- 
 `.load()` | Simplest method to retrieve data. Loads HTML into an element.
