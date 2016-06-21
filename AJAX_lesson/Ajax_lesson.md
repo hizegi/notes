@@ -75,6 +75,7 @@ Method | Description
 
 ##### jQuery and AJAX: Responses
 jQuery makes it easier to handle data from the server. Use these event methods to handle the data upon success/failure:
+
 Method | Description
 --- | --- 
 `.done()` | fires when the request has successfully completed
