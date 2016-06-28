@@ -4,13 +4,13 @@
 -  How interactions create events
 -  How Events trigger code
 -  How code responds to users
--  Practice binding events to single and multiple DOM elements
+-  Practice binding events to DOM elements
 
 ### Why is this important?
 - So far we've had a lot of stand alone functional JavaScript exercises. In our Intro to DOM lesson, we finally started seeing the **interaction between HTML/CSS and JavaScript.**
 - Today we will expand our understanding of how the DOM and JavaScript begin to allow user functionality and in-depth interaction.
 
-## DOM Events Exercise! 
+## DOM Events Drill! 
 
 #### Groups: 2-3 students
 #### Time: 4 minutes
@@ -32,7 +32,6 @@ DOM interaction is event based. HTML DOM events allow JavaScript to register dif
 
 - [MDN DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
 - [W3Schools DOM Events](http://www.w3schools.com/jsref/dom_obj_event.asp)
-- [List of Event Types!](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 ## Common Event Types
 - UI Events
@@ -46,14 +45,14 @@ DOM interaction is event based. HTML DOM events allow JavaScript to register dif
     - **mouseout**: user mouses off/out an element
 - Form Events
     - **change**: can be attached to a input, select, or textarea element and fires when value is changed
-- Focus Events
+- Focus Events + more
 
 ## Basic Event Listeners & Handlers
 Let's try out some basic event listeners.
 
-- Use "vanilla" JavaScript to select the desired HTML element through the DOM
+- Use JavaScript to select the desired HTML element through the DOM
 - Add an onclick event listener onto the selected element.
-- For example's sake, let's make it respond with an alert().
+- For example's sake, let's make it respond with an alert.
 
 ##### Step 1: Select the element node(s) you want the script to respond to. Let's grab box1.
 ```
@@ -69,7 +68,7 @@ box1.onclick = function(event) {
 ##### Step 3:  State the code you want to run when the event happens. I add the alert function (for this example).
 ```
 box1.onclick = function(event) {
-    alert('You just clicked me!');
+    alert("Hey you clicked me!");
 };
 ```
 
@@ -78,7 +77,7 @@ box1.onclick = function(event) {
 
 1. **element**: DOM element node we want to target
 2. **onevent**: event bound to the node. *onclick* is an example of a listener. It is listening on the DOM for an event to trigger.
-3. **functionName**: name of function to call. The response of the listening triggering is referred to as the handler.
+3. **functionName**: name of function to call. The response when the listener triggers is referred to as the handler.
 
 ##### Why do we pass 'event' in the parameter?
 The event is an actual object. Sometimes people prefer to pass it in explicitly but it can still work without it.
@@ -91,10 +90,12 @@ box1.onclick = function(event) {
 }
 ```
 
-## Individual Practice:
+## Individual Drill:
 #### Time: 4 minutes
 #### Link: [JS-bin](https://jsbin.com/lufufenihi/1/edit?html,js,output)
-#### Notes: turn Auto-JS on
+#### Notes: 
+*turn Auto-JS on*
+
 - Work on your own CLONE: `File > Clone`
 - Add a `onmouseover` listener to box1 that responds with an alert saying "you moused on this!"
 - Add a `onmouseout` listener to box1 that responds with an alert saying "you moused out of this!"
@@ -103,12 +104,18 @@ box1.onclick = function(event) {
 The handler's we've used so alert(), console.log() are all functions right?
 So we are passing a function inside a function anonymous!
 
-## Advanced Practice
+
+
+## Advanced Drill!
 #### Time: 4 minutes
 #### Link: [JS-bin](https://jsbin.com/lufufenihi/1/edit?html,js,output)
+#### Notes:
+*Turn Auto-JS on*
+*clear out comments*
+
 - Work on your own CLONE: `File > Clone`
 - box2 on mouseover, changes background color to red
-    - hint: style.background
+    - hint: `element.style.backgroundColor = "something";`
 - box2 on mouseout, changes background color to white
 - box1 on click, console.log(this) AND change the font-color to white;
 
@@ -120,9 +127,7 @@ Now that we can interact with user interaction, we realize we are completely dep
 
 Imagine trying to attach a click event on a picture, but the picture didn't finish loading. JavaScript already executed all your code tho. Now your events won't register!
 
-What if your app becomes more complex and HTML elements are added through external sources (facebook login popup). But your javascript might not be able to register since it fired off before the elements from the external source were loaded.
-
-We first solve this issue as well as that of polluting global scope by encapsulating our entire JS file in a `window.onload`
+We first solve this issue (and polluting global scope) by encapsulating our entire JS file in a `window.onload`
 
 ```
 window.onload = function() {
@@ -162,7 +167,7 @@ Let's do this together!
 ```
 - On browser: Type in a value into the input field.
 - Using Dev Inspect: inspect the input field, what element is this going in?
-- Use the function `.value`
+- Use the function `.value` to get value of input field
 
 ```
 var secretValue = document.querySelector('#secret-input');
