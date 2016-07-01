@@ -67,8 +67,8 @@ Media query is a CSS technique. It uses the `@media` rule and executes if a cond
 We can have multple conditions too.
 
 ```
-/* If the browser window is smaller than 400px the background color will change to lightblue*/
-/* If the browser is larger than 800px, the background color will change to lightblue */
+/* If the browser window is larger than 400px the background color will change to lightblue*/
+/* If the browser is smaller than 800px, the background color will change to lightblue */
 
 @media only screen and (min-width: 400px) and (max-width: 800px)  {
     body {
