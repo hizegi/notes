@@ -135,6 +135,7 @@ img {
 - Using media queries, at width of 750px and larger, make the list take up 6 "columns"
 - **BONUS:** Don't use starter code, and make the example happen!
 #### Starter Code:
+
 ```
 <---HTML STARTER--->
 	<nav>
