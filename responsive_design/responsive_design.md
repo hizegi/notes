@@ -7,10 +7,16 @@
 - Define media queries and why we need them
 
 ### Why is this important?
-Almost every client and company is pushing for a mobile version of their website as more users are using their mobile devices like phones and tablets to view the web. When viewing on your phone, you'll notice sometimes instead of `www.` you'll see `m.` or `mobile.` preceding the website's URL, so those companies created separate 'mobile' versions of that site. But these mobile sites have reduced functionality, as it uses the basic site content. So to have one fully functioning website for all devices --- we have Responsive Design!
+Almost every client and company is pushing for a mobile version of their website as more users are using their mobile devices like phones and tablets to view the web. When viewing on your phone, you'll notice sometimes instead of `www.` you'll see `m.` or `mobile.` preceding the website's URL, so those companies created separate 'mobile' versions of that site. But these mobile sites have reduced functionality, as it only uses the site's basic content. 
+
+> Example: Using your smartphone or tablet, open up a browser and enter youtube.com. Select 'Cancel' when prompted to open up in the YouTube app. Check the URL. What does it say?
+
+Responsive Design let's us use 1 source of code for your website that adapts beautifully on every screen size, device and device orientation.
 
 ### What is Responsive Design?
-Responsive design requires a variety of tools and techniques to allow a website to flex, adapt, and scale to the device's screen size that it's being viewed on. That is, the website can "respond" to the device accordingly. For example, on your cell phones, you don't have to look at the huge website and zoom in 100x to click read something.
+Responsive design requires a variety of tools and techniques to allow a website to flex, adapt, and scale to the device that it's being viewed on. That is, the website can "respond" to the devices' different sized view ports and resolutions accordingly. 
+
+For example, on your cell phones, you don't have to look at the huge website and zoom in 100x to click read something.
 
 ### You Do: Responsive Design Exercise
 #### Groups: 2-3
