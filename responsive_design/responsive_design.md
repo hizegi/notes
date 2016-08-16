@@ -7,10 +7,10 @@
 - Define media queries and why we need them
 
 ### Why is this important?
-Almost every client and company is pushing for a mobile version of their website as more users are using their mobile devices like phones and tablets to view the web. When viewing on your phone, you'll notice sometimes instead of `www.` you'll see `m.` preceding the website's URL, so those companies created separate 'mobile' versions of that site. But these mobile sites have reduced functionality, as it uses the basic site content. So to have one fully functioning website for all devices --- we have Responsive Design!
+Almost every client and company is pushing for a mobile version of their website as more users are using their mobile devices like phones and tablets to view the web. When viewing on your phone, you'll notice sometimes instead of `www.` you'll see `m.` or `mobile.` preceding the website's URL, so those companies created separate 'mobile' versions of that site. But these mobile sites have reduced functionality, as it uses the basic site content. So to have one fully functioning website for all devices --- we have Responsive Design!
 
 ### What is Responsive Design?
-Responsive design requires a variety of tools and techniques to allow a website to flex, adapt, and scale to the device's screen size that it's being viewed on. That is, the website can "respond" to the mobile device accordingly. You don't have to look at the huge website and zoom in 100x to click read something.
+Responsive design requires a variety of tools and techniques to allow a website to flex, adapt, and scale to the device's screen size that it's being viewed on. That is, the website can "respond" to the device accordingly. For example, on your cell phones, you don't have to look at the huge website and zoom in 100x to click read something.
 
 ### You Do: Responsive Design Exercise
 #### Groups: 2-3
@@ -18,8 +18,8 @@ Responsive design requires a variety of tools and techniques to allow a website 
 #### Link: http://www.badruttspalace.com/ , http://craigslist.org
 #### Instructions: 
 - 1 person takes notes (text editor: your choice)
-- Everyone check out each website together and see how you think responsive design is achieved or unachieved. Explore the sites, click the tabs, and shrink the window's width, as small as it can go. 
-    - What's happening to the images? Menu bar? Animations? Buttons? Forms?
+- Everyone check out each website together and see how you think responsive design is achieved or unachieved. Explore the sites, click the tabs, and shrink the window's width, as small and as big as it can go. 
+    - What's happening to the images? Text? Font-size? Menu bar? Animations? Buttons? Forms?
     - Turn on element inspect to view the browser's pixel width and height. At what dimensions are the changes happening?
 - Be ready to discuss a few points with the class
 
@@ -43,6 +43,8 @@ Different experiences right? We see how widely our user experience changes when 
 **Question**: Can you guess what this may mean?
 
 It's exactly as it sounds: mobile first means designing for the smallest screen size and working your way up to larger screen size. It is one of the best strategies to create a responsive website site, as building desktop first won't be the fastest development process as the core and supplementary elements merge and become harder to distinguish and separate.
+
+Check out popular mobile devices screen sizes [here](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/).
 
 ### min/max --- height/width
 - [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
@@ -89,7 +91,7 @@ Read more on [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Me
 - make sure your HTML and CSS file are linked:
     - Set your body background to `blanchedalmond`
     - Write any text within your body
-- using media queries, use `min-width` and `max-width` so that:
+- in your CSS file, using media queries, use `min-width` and `max-width` so that:
     - If the browser is 350px or smaller
         - the body background is `mintcream`
         - font-size is 30px
