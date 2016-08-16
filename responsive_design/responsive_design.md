@@ -48,7 +48,7 @@ Different experiences right? We see how widely our user experience changes when 
 ### The "mobile first" development process
 **Question**: Can you guess what this may mean?
 
-It's exactly as it sounds: mobile first means designing for the smallest screen size and working your way up to larger screen size. It is one of the best strategies to create a responsive website site, as building desktop first won't be the fastest development process as the core and supplementary elements merge and become harder to distinguish and separate.
+It's exactly as it sounds: mobile first means designing for the smallest screen size and working your way up to larger screen size. It's the idea that we start our CSS with mobile devices in mind first, and adding media queries to serve up increasingly larger viewport sizes. 
 
 Check out popular mobile devices screen sizes [here](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/).
 
@@ -61,6 +61,20 @@ Check out popular mobile devices screen sizes [here](https://css-tricks.com/snip
 **Note**: These values override the `height` and `width` properties you may have set.
 
 ***Demo*** 
+
+### You Do: Max-Width, Min-width
+#### Time: 2 minutes
+#### Link: [JS-Bin](http://jsbin.com/forojizaja/edit?css,output)
+#### Instructions:
+- Clone your open copy (File > Clone)
+- Make sure `Auto Run JS` is ticked off
+- In the CSS file, change the div's:
+	- mix-width
+	- max-width
+	- min-height
+	- max-height
+- Use pixels and percentage amounts
+- Dont forget to shrink/expand the window's width manually
 
 ### Media Queries
 Media query is a CSS technique. It uses the `@media` rule and executes if a condition is true. 
@@ -89,7 +103,7 @@ We can have multple conditions too.
 ```
 Read more on [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries).
 
-### Individual Drill!
+### You Do: Media Queries
 #### Time: 5 minutes
 #### Link: [html + css]
 #### Instructions:
