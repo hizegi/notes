@@ -13,7 +13,7 @@ Almost every client and company is pushing for a mobile version of their website
 
 Responsive Design let's us use 1 source of code for your website that adapts beautifully on every screen size, device and device orientation.
 
-### What is Responsive Design?
+## What is Responsive Design?
 - Responsive design requires a variety of tools and techniques to allow a website to flex, adapt, and scale to the device that it's being viewed on. That is, the website can "respond" to the devices' different sized view ports and resolutions accordingly.
 
 - It lets you use the same basic HTML and simply style based on the device being used.
@@ -49,7 +49,7 @@ Different experiences right? We see how widely our user experience changes when 
     - Fluid layouts and ems (%)
     - Media Queries
 
-### The "mobile first" development process
+## The "mobile first" development process
 **Question**: Can you guess what this may mean?
 
 It's exactly as it sounds: mobile first means designing for the smallest screen size and working your way up to larger screen size. It's the idea that we start our CSS with mobile devices in mind first, and adding media queries to serve up increasingly larger viewport sizes. 
@@ -86,6 +86,7 @@ Check out popular mobile devices screen sizes [here](https://css-tricks.com/snip
 - Screen resolutions differ per device
 - Smartphones typically have a lower resolution (dpi) than a desktop computer
 - `@media` query is a CSS technique. It uses the `@media` rule and executes if a condition is true.
+- screen type (print, screen, all devices)
 - media features include:
 	- color
 	- aspect-ration
@@ -141,16 +142,6 @@ Read more on [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Me
     - If the browser is 600px or larger
         - the body background is `lawngreen`
         - font-size is 50px
-
-### media types and features
-Link: [MDN Media Types](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
-- screen type (print, screen, all devices)
-- media features
-    - min-width
-    - max-width
-    - orientation
-    - resolution
-
 
 ```
 body {
