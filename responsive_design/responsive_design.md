@@ -63,7 +63,7 @@ Check out popular mobile devices screen sizes [here](https://css-tricks.com/snip
 ***Demo*** 
 
 ### You Do: Max-Width, Min-width
-#### Time: 2 minutes
+#### Time: 3 minutes
 #### Link: [JS-Bin](http://jsbin.com/qikebojoxu/1/edit?css,output)
 #### Instructions:
 - Clone your open copy (File > Clone)
@@ -74,6 +74,7 @@ Check out popular mobile devices screen sizes [here](https://css-tricks.com/snip
 	- min-height
 	- max-height
 - Use pixels and percentage amounts
+- Try out different combinations
 - Dont forget to shrink/expand the window's width manually
 
 ### Media Queries
