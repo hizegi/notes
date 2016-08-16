@@ -45,9 +45,9 @@ Different experiences right? We see how widely our user experience changes when 
     - orientation
     - media
 - 3 Main Methods to achieve this:
-    - Media queries
-    - Fluid layouts and ems (%)
     - Device/browser detection to add performance to your site and reduce bloat
+    - Fluid layouts and ems (%)
+    - Media Queries
 
 ### The "mobile first" development process
 **Question**: Can you guess what this may mean?
@@ -82,7 +82,25 @@ Check out popular mobile devices screen sizes [here](https://css-tricks.com/snip
 - Dont forget to shrink/expand the window's width manually
 
 ### Media Queries
-Media query is a CSS technique. It uses the `@media` rule and executes if a condition is true. 
+
+- Screen resolutions differ per device
+- Smartphones typically have a lower resolution (dpi) than a desktop computer
+- `@media` query is a CSS technique. It uses the `@media` rule and executes if a condition is true.
+- media features include:
+	- color
+	- aspect-ration
+	- height
+	- width
+	- orientation
+	- full list of [media features](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#color)
+- Just like you saw with min- and max-width, you can prefix these features with min-, max-.
+
+### Why @media queries?
+- It let's us tailor the website's content to a set range of devices without having to change the HTML and content itself.
+
+<link rel="stylesheet" type="text/css" href= "smartphone.css" media="screen and (max-device-width: 480px)" />
+
+to load a stylesheet that will only be applied to devices with a maximum horizontal resolution of 480px.
 
 ```
 /* If the browser window is smaller than 400px, the background color will change to lightblue: */
