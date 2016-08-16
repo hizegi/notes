@@ -52,7 +52,7 @@ It's exactly as it sounds: mobile first means designing for the smallest screen 
 
 **Note**: These values override the `height` and `width` properties you may have set.
 
-***Demo** * 
+***Demo*** 
 
 ### Media Queries
 Media query is a CSS technique. It uses the `@media` rule and executes if a condition is true. 
@@ -79,6 +79,7 @@ We can have multple conditions too.
     }
 }
 ```
+Read more on [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries).
 
 ### Individual Drill!
 #### Time: 5 minutes
