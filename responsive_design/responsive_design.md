@@ -14,7 +14,11 @@ Almost every client and company is pushing for a mobile version of their website
 Responsive Design let's us use 1 source of code for your website that adapts beautifully on every screen size, device and device orientation.
 
 ### What is Responsive Design?
-Responsive design requires a variety of tools and techniques to allow a website to flex, adapt, and scale to the device that it's being viewed on. That is, the website can "respond" to the devices' different sized view ports and resolutions accordingly. 
+- Responsive design requires a variety of tools and techniques to allow a website to flex, adapt, and scale to the device that it's being viewed on. That is, the website can "respond" to the devices' different sized view ports and resolutions accordingly.
+
+- It lets you use the same basic HTML and simply style based on the device being used.
+
+- Think of it as the accessibility of content.
 
 For example, on your cell phones, you don't have to look at the huge website and zoom in 100x to click read something.
 
