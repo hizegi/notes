@@ -64,7 +64,7 @@ Check out popular mobile devices screen sizes [here](https://css-tricks.com/snip
 
 ### You Do: Max-Width, Min-width
 #### Time: 2 minutes
-#### Link: [JS-Bin](http://jsbin.com/forojizaja/edit?css,output)
+#### Link: [JS-Bin](http://jsbin.com/qikebojoxu/1/edit?css,output)
 #### Instructions:
 - Clone your open copy (File > Clone)
 - Make sure `Auto Run JS` is ticked off
