@@ -9,7 +9,7 @@
 ### Why is this important?
 Almost every client and company is pushing for a mobile version of their website as more users are using their mobile devices like phones and tablets to view the web. When viewing on your phone, you'll notice sometimes instead of `www.` you'll see `m.` or `mobile.` preceding the website's URL, so those companies created separate 'mobile' versions of that site. But these mobile sites have reduced functionality, as it only uses the site's basic content. 
 
-> Example: Using your smartphone or tablet, open up a browser and enter youtube.com. Select 'Cancel' when prompted to open up in the YouTube app. Check the URL. What does it say?
+> Example: Using your smartphone or tablet, open up a browser and enter youtube.com. Select 'Cancel' when prompted to open up in the YouTube app. Check the URL. What does it say? Now open up your desktop browser and enter m.youtube.com. How does the URL change?
 
 Responsive Design let's us use 1 source of code for your website that adapts beautifully on every screen size, device and device orientation.
 
