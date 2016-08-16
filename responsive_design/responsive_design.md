@@ -12,29 +12,32 @@ Almost every client and company is pushing for a mobile version of their website
 ### What is Responsive Design?
 Responsive design requires a variety of tools and techniques to allow a website to flex, adapt, and scale to the device's screen size that it's being viewed on. That is, the website can "respond" to the mobile device accordingly. You don't have to look at the huge website and zoom in 100x to click read something.
 
-### Responsive Design Drill!
+### You Do: Responsive Design Exercise
 #### Groups: 2-3
 #### Time: 5 minutes
-#### Link: http://outdatedbrowser.com/ , http://reddit.com
+#### Link: http://www.badruttspalace.com/ , http://craigslist.org
 #### Instructions: 
 - 1 person takes notes (text editor: your choice)
 - Everyone check out each website together and see how you think responsive design is achieved or unachieved. Explore the sites, click the tabs, and shrink the window's width, as small as it can go. 
-    - What's happening to the images? Animations? Buttons? Forms?
+    - What's happening to the images? Menu bar? Animations? Buttons? Forms?
     - Turn on element inspect to view the browser's pixel width and height. At what dimensions are the changes happening?
 - Be ready to discuss a few points with the class
 
 #### Discussion: 4 minutes
 
-Different experiences right? We see how our widely our user experience changes when viewing the same content on a range of screen sizes. For companies and clients who want excellent user experience depend on good responsive design.
+[//]: # "Refer back to craigslist.com. Ask everyone to go to the bottom and click on 'mobile' "
+
+Different experiences right? We see how widely our user experience changes when viewing the same content on a range of screen sizes. For companies and clients who want excellent user experience depend on good responsive design.
 
 - Content responds to device attributes:
     - width
     - height
     - orientation
     - media
-- Methods to achieve this:
-    - fluid layout- %, rems, ems
-    - media queries
+- 3 Main Methods to achieve this:
+    - Media queries
+    - Fluid layouts and ems (%)
+    - Device/browser detection to add performance to your site and reduce bloat
 
 ### The "mobile first" development process
 **Question**: Can you guess what this may mean?
