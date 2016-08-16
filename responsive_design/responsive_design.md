@@ -98,10 +98,46 @@ Check out popular mobile devices screen sizes [here](https://css-tricks.com/snip
 
 ### Why @media queries?
 - It let's us tailor the website's content to a set range of devices without having to change the HTML and content itself.
+- There are a few ways to add media queries onto your page.
+
+```
+INDEX.HTML
+<-- external style sheet: directly into <link> as media -->
 
 <link rel="stylesheet" type="text/css" href= "smartphone.css" media="screen and (max-device-width: 480px)" />
 
-to load a stylesheet that will only be applied to devices with a maximum horizontal resolution of 480px.
+```
+
+or
+
+```
+INDEX.HTML
+<-- internal style sheet -->
+<style>
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
+</style>
+```
+
+or
+
+```
+STYLE.CSS
+<-- in .css file -->
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
+```
+
+**POP QUIZ!** What are the 3 ways we can add media queries into our website?
+
+
+
 
 ```
 /* If the browser window is smaller than 400px, the background color will change to lightblue: */
