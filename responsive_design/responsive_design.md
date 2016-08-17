@@ -179,14 +179,14 @@ Read more on [all viewport sizes](http://viewportsizes.com/).
 - Link your CSS to your html file
 - In `index.html` write "Responsive Design Party!" in the `<body>` 
 - In `style.css`:
-    - Set your body background to `blanchedalmond`
+    - Set your body background to `yellow`
 		- using `@media` queries, use `min-width` and `max-width` so that:
     - If the screen width is 320px or smaller
-        - the body background is `mintcream`
+        - the body background is `pink`
         - font-size is 30px
     - If the screen width is 768px or larger
-        - the body background is `lawngreen`
-        - font-size is 50px
+        - the body background is `blue`
+        - font-size is 60px
 
 ```
 body {
