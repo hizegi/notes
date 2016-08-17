@@ -20,7 +20,7 @@ Responsive Design let's us use 1 source of code for your website that adapts bea
 
 - Think of it as the accessibility of content.
 
-For example, on your cell phones, you don't have to look at the huge website and zoom in 100x to click read something.
+> Example: on your cell phones, you don't have to look at the huge website and zoom in 100x to click read something.
 
 ### You Do: Responsive Design Exercise
 #### Groups: 2-3
@@ -140,42 +140,51 @@ STYLE.CSS
 
 
 ```
-/* If the browser window is smaller than 400px, the background color will change to lightblue: */
+FOR DEVICES 320px AND SMALLER (iPHONE 4, 5)
 
-@media only screen and (max-width: 400px) {
+@media only screen 
+	and (max-width: 320px) {
     body {
         background-color:lightblue;
     }
 }
 ```
 
-We can have multple conditions too.
+We can have multiple conditions too.
+And multiple CSS rules.
 
 ```
-/* If the browser window is larger than 400px the background color will change to lightblue*/
-/* If the browser is smaller than 800px, the background color will change to lightblue */
+FOR IPAD AIR (768 x 1024px)
 
-@media only screen and (min-width: 400px) and (max-width: 800px)  {
-    body {
-        background-color:lightblue;
-    }
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 768px){
+  	body {
+  		background-color: yellow
+  	}
+  	
+  	div {
+  		width: 50%
+  	}
 }
 ```
-Read more on [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries).
+Read more on [all viewport sizes](http://viewportsizes.com/).
 
 ### You Do: Media Queries
 #### Time: 5 minutes
-#### Link: [html + css]
+#### Link: Cloud9 - Your Space
 #### Instructions:
-***If you're using cloud9, preview in browser***
-- make sure your HTML and CSS file are linked:
+- Create `index.html` file
+- Create `style.css` file
+- Link your CSS to your html file
+- In `index.html` write "Responsive Design Party!" in the `<body>` 
+- In `style.css`:
     - Set your body background to `blanchedalmond`
-    - Write any text within your body
-- in your CSS file, using media queries, use `min-width` and `max-width` so that:
-    - If the browser is 350px or smaller
+		- using `@media` queries, use `min-width` and `max-width` so that:
+    - If the screen width is 320px or smaller
         - the body background is `mintcream`
         - font-size is 30px
-    - If the browser is 600px or larger
+    - If the screen width is 768px or larger
         - the body background is `lawngreen`
         - font-size is 50px
 
