@@ -18,7 +18,7 @@ Responsive Design let's us use 1 source of code for your website that adapts bea
 
 - It lets you use the same basic HTML and simply style based on the device being used.
 
-- Think of it as the accessibility of content.
+- Purpose: Think of it as the accessibility of content.
 
 > Example: on your cell phones, you don't have to look at the huge website and zoom in 100x to click read something.
 
@@ -39,11 +39,10 @@ Responsive Design let's us use 1 source of code for your website that adapts bea
 
 Different experiences right? We see how widely our user experience changes when viewing the same content on a range of screen sizes. For companies and clients who want excellent user experience depend on good responsive design.
 
-- Content responds to device attributes:
+- Content responds to device attributes such as:
     - width
     - height
     - orientation
-    - media
 - 3 Main Methods to achieve this:
     - Device/browser detection to add performance to your site and reduce bloat
     - Fluid layouts and ems (%)
@@ -86,7 +85,8 @@ Check out popular mobile devices screen sizes [here](https://css-tricks.com/snip
 - Screen resolutions differ per device
 - Smartphones typically have a lower resolution (dpi) than a desktop computer
 - `@media` query is a CSS technique. It uses the `@media` rule and executes if a condition is true.
-- screen type (print, screen, all devices)
+- media types:
+	- screen type (print, screen, all devices)
 - media features include:
 	- color
 	- aspect-ration
